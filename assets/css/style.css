@@ -1,0 +1,44 @@
+*{
+    font-size: 14px;
+}
+ table{
+    border-collapse:collapse; table-layout:fixed; width: 100%;
+ }
+td, th{
+    max-width: 8% !important;
+    min-width: 8% !important;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    word-wrap: break-word;
+}
+td img{
+    width:100%
+}
+
+th span{
+position: absolute;
+right: 0;
+top: 50%;
+margin-top: -8px;
+}
+.pagination{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.pagination a.hidden{
+    background-color: #ccc;
+    color: #d6d6d6;
+    pointer-events: none;
+}
+.pagination a{
+    margin-left: 10px;
+    margin-right: 10px;
+    border:1px solid #ccc;
+    padding: 5px 20px;
+}
